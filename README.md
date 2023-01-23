@@ -11,4 +11,4 @@ To build this within StRoot, one only needs to include the FASTJET library.
 cons EXTRA_CXXFLAGS=`fastjet-config --cxxflags`
 ```
 
-There are 2 macros: starsim.C and starsim_D0jet.C. `starsim.C` uses the `D0Filter`, while `starsim_D0jet.C` uses the `D0JetFilter`.
+There are 2 macros: `starsim.C` and `starsim_D0jet.C`. `starsim.C` uses the `D0Filter`, while `starsim_D0jet.C` uses the `D0JetFilter`.
