@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "runBfc.C": "cpp"
+        "runBfc.C": "cpp",
+        "genDst.C": "cpp",
+        "starsim.C": "cpp",
+        "geant.C": "cpp"
     }
 }
