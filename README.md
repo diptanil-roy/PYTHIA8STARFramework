@@ -40,3 +40,9 @@ There you go. You should have a picoDst file ready. The MC Info can be found in 
 ## Job Submission
 An xml script for batch jobs submission in RCAS is added. It won't work out-of-the-box. Set a bunch of directories that are required, and tweak the framework to not need input vertices.
 
+Once you are ready to submit jobs, use
+```
+star-submit simulation.y2014x.pythia8.D0.xml
+```
+
+More information about the STAR Scheduler can be found here: $url{https://www.star.bnl.gov/public/comp/Grid/scheduler/manual.htm}
