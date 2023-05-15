@@ -45,4 +45,4 @@ Once you are ready to submit jobs, use
 star-submit simulation.y2014x.pythia8.D0.xml
 ```
 
-More information about the STAR Scheduler can be found here: $url{https://www.star.bnl.gov/public/comp/Grid/scheduler/manual.htm}
+More information about the STAR Scheduler can be found here: https://www.star.bnl.gov/public/comp/Grid/scheduler/manual.htm
