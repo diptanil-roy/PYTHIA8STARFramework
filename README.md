@@ -37,3 +37,6 @@ root4star -l -b -q 'genDst.C\(-1,"picoDst,PicoVtxMode:PicoVtxVpdOrDefault,PicoCo
 
 There you go. You should have a picoDst file ready. The MC Info can be found in MCVertex and MCTracks branches. More information can be found in the StPicoDst class documentation.
 
+## Job Submission
+An xml script for batch jobs submission in RCAS is added. It won't work out-of-the-box. Set a bunch of directories that are required, and tweak the framework to not need input vertices.
+
