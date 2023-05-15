@@ -140,7 +140,7 @@ void getNextRun( int& event, int& run, double& z ) {
 
 // ----------------------------------------------------------------------------
 
-void starsim( Int_t nevents=10, Int_t runnumber=15117062, TString runfile_="15117062.dat", int sequence=0, int dummy = 0, double ckin3 = 0.0, double ckin4 = 3.0 )
+void starsim( Int_t nevents=4, Int_t runnumber=15117062, TString runfile_="15117062.dat", int sequence=0, int dummy = 0, double ckin3 = 0.0, double ckin4 = 3.0 )
 { 
 
   // nevents -- number of events to process

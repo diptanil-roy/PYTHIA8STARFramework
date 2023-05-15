@@ -15,7 +15,7 @@ void geant(const Int_t Nevents=1000,
 
       // const Char_t *fzfile ="/gpfs01/star/pwg_tasks/jetcorr03/HFJets_Mar17_2022_SimulatedFiles/out_production/rcf22000_15165031_0014_1_100evts.fzd")
   // const Char_t *fzfile ="st_physics_15094070_raw_1000002_3_0_NoD0Decay.fzd")
-  const Char_t *fzfile = "/gpfs01/star/pwg/prozorov/jets/pythia8/PYTHIA8STARFramework/rcf22000_15117062.dat_0_4evts.fzd")
+  const Char_t *fzfile = "rcf22000_15117062.dat_0_4evts.fzd")
 {
 
   TH1F *hD0Eta =  new TH1F("hD0Eta", "hD0Eta", 20, -1, 1);
@@ -43,10 +43,13 @@ void geant(const Int_t Nevents=1000,
 
        Double_t pT =  trk->pt;
        Double_t Eta = trk->eta;
+      
+      printf("eg: %d ge: %d start_vertex: %d stop_vertex: %d pT %f eta %f  Nvpd %d  NBEMC %d\n",
+       trk->eg_label,trk->ge_pid,trk->start_vertex_p,trk->stop_vertex_p,pT,Eta,trk->n_vpd_hit, trk->n_emc_hit);
 
        if (trk->ge_pid == 37 || trk->ge_pid == 38){
-        printf("eg: %d ge: %d start_vertex: %d stop_vertex: %d pT %f eta %f  Nvpd %d  NBEMC %d\n",
-       trk->eg_label,trk->ge_pid,trk->start_vertex_p,trk->stop_vertex_p,pT,Eta,trk->n_vpd_hit, trk->n_emc_hit);
+      //   printf("eg: %d ge: %d start_vertex: %d stop_vertex: %d pT %f eta %f  Nvpd %d  NBEMC %d\n",
+      //  trk->eg_label,trk->ge_pid,trk->start_vertex_p,trk->stop_vertex_p,pT,Eta,trk->n_vpd_hit, trk->n_emc_hit);
         hD0Eta->Fill(Eta);
        }
      }
